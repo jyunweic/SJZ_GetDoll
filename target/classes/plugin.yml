@@ -1,0 +1,19 @@
+name: SJZ_GetDoll
+version: 1.0 # 會從 pom.xml 讀取版本
+main: com.jyunChen.sjzgetdoll.SJZ_GetDoll # 你的主類別路徑
+api-version: 1.21 # 適用於 Minecraft 1.21+
+author: jyunChen # 你的名字
+description: A simple alias plugin to get special dolls for Folia servers (Final Attempt).
+folia-supported: true # 告訴 Folia 這個插件支援它
+
+commands:
+  doll:
+    description: Get a special doll item.
+    usage: /<command> <old|vip> <playerName>
+    permission: sjz.getdoll
+    permission-message: You do not have permission to use this command. # 無權限訊息
+
+permissions:
+  sjz.getdoll:
+    description: Allows user to use the /doll command.
+    default: op # 預設 OP 擁有此權限
